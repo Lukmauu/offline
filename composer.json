@@ -1,0 +1,7 @@
+{
+	"require" : {
+		"phpunit/phpunit" : "^4.8",
+		"illuminate/database": "^5.2"
+       }
+       
+}

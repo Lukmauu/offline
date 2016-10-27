@@ -31,19 +31,19 @@
         }
     }
     
-    //if(lsTest() === true){
+        
         
         Storage.prototype.setObject = function(key, value){
             
             this.setItem(key, JSON.stringify(value));
         };
         
-        Storage.prototype.getObejct = function(key){
+        Storage.prototype.getObject = function(key){
             
             var __value = this.getItem(key);
             return JSON.parse(__value);
         };
-    //}
+   
     
     function generateUUID(){
         var d = new Date().getTime();
@@ -2131,22 +2131,112 @@
       <div class="container">
           <div class="row">
               <form action="" method="POST" class="form-horizontal col-md-7">
+                  
                   <div class="form-group col-md-12">
-                      <label class="form-label">ADDRESS</label>
-                      <input class="form-control">
+                      <label class="form-label">Organization Name</label>
+                      <input class="form-control" name="Organization">
                   </div>
-                  <div class="form-group  col-md-6 col-md-offset-1">
-                      <label class="form-label">FIRST NAME</label>
-                      <input type="text" class="form-control">
+                  <div class="form-group col-md-6">
+                      <label class="form-label">First Name 200</label>
+                      <input class="form-control" name="FirstName">
                   </div>
-                  <div class="form-group  col-md-6">
-                      <label class="form-label">LAST NAME</label>
-                      <input type="text" class="form-control">
-                  </div>
-                  <div class="form-group">
-                      <input type="submit" class="btn btn-lg btn-primary right">
+                  <div class="form-group col-md-6">
+                      <label class="form-label">Last Name</label>
+                      <input class="form-control" name="LastName">
                   </div>
                   
+                  <div class="form-group col-md-12">
+                      <label class="form-label">Email</label>
+                      <input class="form-control" name="Email">
+                  </div>
+                  <div class="form-group col-md-6">
+                      <label class="form-label">Street</label>
+                      <input class="form-control" name="Street" placeholder="8002 Wallingford Ave N">
+                  </div>
+                        <div class="form-group col-md-6" style="visibility : hidden;">
+                            <label class="form-label">Street2</label>
+                            <input class="form-control" name="Street2">
+                        </div>
+                  <div class="form-group col-md-6">
+                      <label class="form-label">City</label>
+                      <input class="form-control" name="City">
+                  </div>
+                  <div class="form-group col-md-3">
+                      <label class="form-label">Province</label>
+                      <input class="form-control" name="Province">
+                  </div>
+                  <div class="form-group col-md-6">
+                      <label class="form-label">Country</label>
+                      <input class="form-control" name="Country">
+                  </div>
+                  <div class="form-group col-md-3">
+                      <label class="form-label">Postal Code</label>
+                      <input class="form-control" name="PostalCode">
+                  </div>
+                  <div class="form-group col-md-3">
+                      <label class="form-label">Business Phone</label>
+                      <input class="form-control" name="BusPhone">
+                  </div>
+                  <div class="form-group col-md-3">
+                      <label class="form-label">Home Phone</label>
+                      <input class="form-control" name="HomePhone">
+                  </div>
+                  <div class="form-group col-md-3">
+                      <label class="form-label">Mobile Phone</label>
+                      <input class="form-control" name="MobPhone">
+                  </div>
+                  <div class="form-group col-md-6" style="visibility : hidden;">
+                      <label class="form-label">Fax</label>
+                      <input class="form-control" name="Fax">
+                  </div>
+                  <div class="form-group col-md-12">
+                      <label class="form-label"></label>
+                      <input class="form-control" name="">
+                  </div>
+                  
+                  
+
+                    <div style="display : none;" class="Sec">
+                        <div class="form-group col-md-6">
+                            <label class="form-label">Second Street</label>
+                            <input class="form-control" name="SecStreet" placeholder="8002 Wallingford Ave N">
+                        </div>
+                              <div class="form-group col-md-6" style="visibility : hidden;">
+                                  <label class="form-label">Second Street2</label>
+                                  <input class="form-control" name="SecStreet2">
+                              </div>
+                        <div class="form-group col-md-6">
+                            <label class="form-label">Second City</label>
+                            <input class="form-control" name="SecCity">
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label class="form-label">Second Province</label>
+                            <input class="form-control" name="SecProvince">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label class="form-label">Second Country</label>
+                            <input class="form-control" name="SecCountry">
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label class="form-label">Second Postal Code</label>
+                            <input class="form-control" name="SecPostalCode">
+                        </div>
+                    </div>
+      
+                  
+                  
+                  <div class="form-group col-md-12">
+                      <label class="form-label">Notes</label>
+                      <input class="form-control" name="Notes" placeholder="Maintenance price $60, in an every other week schedule.">
+                  </div>
+                  <div class="form-group col-md-6">
+                      <label class="form-label">Latitude</label>
+                      <input class="form-control" name="lat">
+                  </div>
+                  <div class="form-group col-md-6">
+                      <label class="form-label">Longitude</label>
+                      <input class="form-control" name="lng">
+                  </div>
               </form>
           </div>
       </div>  
